@@ -1,0 +1,145 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#container{
+    height: 100vh;
+    width: 100vw;
+    background-color: aliceblue;
+    position: relative;
+    background-image: url(https://images.unsplash.com/photo-1675351085230-ab39b2289ff4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=332&q=80);
+}
+
+#box1{
+    height: 50px;
+    width:325px;
+    background-color: rgb(64, 44, 176);
+    border-radius: 10px;
+    border: 4px solid rgb(194, 111, 173);
+    margin: 10px;
+    position: absolute;
+    top: 2vh;
+    left: 65px;
+    animation: rightMovement 4s linear 1s infinite alternate running;
+}
+@keyframes rightMovement {
+    from{
+        top: 2vh;
+        left: 60px;
+    }
+    to{
+        top: 2vh;
+        left: 70vw;
+    }
+}
+
+#box2{
+    height: 50px;
+    width: 325px;
+    background-color: rgb(64, 44, 176);
+    border-radius: 10px;
+    border: 4px solid rgb(194, 111, 173);
+    margin: 10px;
+    position: absolute;
+    top: 87vh;
+    left: 100px;
+    animation: leftMovement 4s linear 1s infinite alternate-reverse running;
+}
+@keyframes leftMovement {
+    from{
+        top: 84vh;
+        left: 60px;
+    }
+    to{
+        top: 84vh;
+        left: 70vw;
+    }
+}
+
+#box3{
+    height: 225px;
+    width: 50px;
+    background-color: rgb(64, 44, 176);
+    border-radius: 10px;
+    border: 4px solid rgb(194, 111, 173);
+    margin: 10px;
+    position: absolute;
+    top: 2vh;
+    animation: sideMovement 2s linear 1s infinite alternate-reverse running;
+}
+@keyframes sideMovement {
+    from{
+        top: 2vh;
+        left: 0vw;
+    }
+    to{
+        top: 65vh;
+        left: 0vw;
+    } 
+}
+
+
+#box4{
+    height: 225px;
+    width: 50px;
+    background-color: rgb(64, 44, 176);
+    border-radius: 10px;
+    border: 4px solid rgb(194, 111, 173);
+    margin: 10px;
+    position: absolute;
+    top: 2vh;
+    left: 95vw;
+    animation: side1Movement 2s linear 1s infinite alternate running;
+}
+@keyframes side1Movement {
+    from{
+        top: 2vh;
+        left: 92vw;
+    }
+    to{
+        top: 65vh;
+        left: 92vw;
+    }
+    
+}
+
+
+#circle{
+    height: 70px;
+    width: 70px;
+    border: 4px solid rgb(194, 111, 173);
+    border-radius: 40px;
+    background-color: rgb(64, 44, 176);
+    position: relative;
+    top: 45vh;
+    left: 45vw;
+    animation: crossMovement 9s ease-in-out 1s infinite forwards running;
+}
+@keyframes crossMovement {
+    0%{
+        top: 40vh;
+        left: 4vw;
+    }
+    25%{
+        top: 73.5vh;
+        left: 40vw;
+    }
+    50%{
+        top: 40vh;
+        left: 87.5vw;
+    }
+    80%{
+        top: 12vh;
+        left: 40vw;
+    }
+    100%{
+        top: 40vh;
+        left: 4vw;
+    }
+}
